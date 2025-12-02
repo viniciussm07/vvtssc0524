@@ -28,3 +28,8 @@ Executa os casos de teste em cima dos mutantes
 ```
 python3 -m pyproteum exemuta --exec placar_session
 ```
+
+Printar mutante
+```
+python3 -m pyproteum mutaview --view --x 648 placar_session
+```

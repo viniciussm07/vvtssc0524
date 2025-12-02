@@ -8,7 +8,6 @@ import os
 
 os.system("python3 -m pyproteum testnew --D . --S placar.py placar_session")
 
-# Adiciona funcional.py e mcdc.py na mesma linha conforme seu comando
 os.system("python3 -m pyproteum tcase --add --S funcional.py mcdc.py mutation.py placar_session")
 
 os.system("python3 -m pyproteum mutagen --create --all 100 0 placar_session")
