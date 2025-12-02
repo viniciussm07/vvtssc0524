@@ -20,8 +20,6 @@ class Placar:
 				
 	
 	def uma_linha(self,i):
-		assert type(i) == type(0)
-		assert 0 <= i <= 9
 		if i == 9:
 			num = '{:^4d}'.format(self.placar[i]) if self.taken[i] else "({:2d})".format(i+1)
 		else:
@@ -30,13 +28,6 @@ class Placar:
 
 
 	def add(self, posicao, dados):
-		assert type(posicao) == type(0)
-		assert type(dados) == list
-		assert len(dados) == 5
-		for kxx in dados:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6
-			
 		if posicao < 1 or posicao > self.POSICOES:
 			raise IndexError("Valor da posição no placar é ilegal")
 		if self.taken[posicao-1]:
@@ -57,7 +48,6 @@ class Placar:
 		
 	def getScore(self, k = None):
 		if k != None:
-			assert 0 <= k <= 9
 			return self.placar[k]
 		t = 0
 		for i in range(self.POSICOES):
@@ -67,20 +57,12 @@ class Placar:
 		
 	
 	def getTaken(self, k):
-		assert 0 <= k <= 9
 		return self.taken[k]
 		
 	def getName(self, k):
-		assert 0 <= k <= 9
 		return self.nomes[k]
 		
 	def conta(self, n, vet):
-		assert type(n) == type(0)
-		assert 1 <= n <= 6
-		assert len(vet) == 5
-		for kxx in vet:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6
 		cont = 0
 		for i in vet:
 			if i == n:
@@ -88,40 +70,21 @@ class Placar:
 		return cont
 		
 	def checkFull(self, dados):
-		assert len(dados) == 5
-		for kxx in dados:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6		
 		v = sorted(dados)
 		return (v[0] == v[1] and v[1] == v[2] and v[3] == v[4]) or \
 		(v[0] == v[1] and v[2] == v[3] and v[3] == v[4])
              
 	def checkSeqMaior(self, dados):
-		assert len(dados) == 5
-		for kxx in dados:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6
-			
 		v = sorted(dados)
 		return v[0]+1 == v[1] and v[1]+1 == v[2] and v[2]+1 == v[3]\
 		and v[3]+1 == v[4]
 		
 	def checkQuadra(slf, dados):
-		assert len(dados) == 5
-		for kxx in dados:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6
-			
 		v = sorted(dados)
 		return ( v[0] == v[1] and v[1] == v[2] and v[2] == v[3]) or\
 		( v[1] == v[2] and v[2] == v[3] and v[3] == v[4])
 
 	def checkQuina(self, v):
-		assert len(v) == 5
-		for kxx in v:
-			assert type(kxx) == type(0)
-			assert 1 <= kxx <= 6
-			
 		return  v[0] == v[1] and v[1] == v[2] and v[2] == v[3] and v[3] == v[4]
 
 
