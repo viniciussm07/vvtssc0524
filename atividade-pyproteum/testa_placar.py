@@ -15,6 +15,4 @@ os.system("python3 -m pyproteum mutagen --create --all 100 0 placar_session")
 
 os.system("python3 -m pyproteum exemuta --exec placar_session")
 
-os.system("python3 -m pyproteum mutaview --list placar_session")
-# Descomente a linha abaixo para abrir a janela visual (isso pausa o script)
-# os.system("python3 -m pyproteum mutaview --gui placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 648 placar_session")
