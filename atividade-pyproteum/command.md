@@ -33,5 +33,11 @@ python3 -m pyproteum exemuta --exec placar_session
 
 Printar mutante
 ```
-python3 -m pyproteum mutaview --view --x 648 placar_session
+python3 -m pyproteum mutaview --view --x 1216 placar_session
+```
+
+executar apenas vivos
+```
+python3 -m pyproteum exemuta --exec --keep placar_session
+Session:  placar_session
 ```
