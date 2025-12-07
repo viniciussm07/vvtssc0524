@@ -20,6 +20,6 @@ os.system("python3 -m pyproteum mutagen --create --all 100 0 placar_session")
 
 # os.system("python3 -m pyproteum exemuta --equiv --x 648 placar_session")
 # os.system("python3 -m pyproteum exemuta --equiv --x 635 placar_session")
-# os.system("python3 -m pyproteum exemuta --equiv --x 638 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1208 placar_session")
 
 os.system("python3 -m pyproteum exemuta --exec placar_session")
