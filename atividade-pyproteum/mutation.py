@@ -51,3 +51,6 @@ class TestPlacarMutation(unittest.TestCase):
         self.p.add(1, [1, 1, 1, 1, 1])
         self.assertTrue(self.p.taken[0])
         self.assertIsInstance(self.p.taken[0], bool)
+
+    def test_checkFull_full_comparandov1comv1(self):
+        self.assertFalse(self.p.checkFull([1, 2, 5, 5, 5]))

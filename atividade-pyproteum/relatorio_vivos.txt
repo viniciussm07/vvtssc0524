@@ -29,7 +29,7 @@ Mutant:  79 cccr live
   32 	            raise IndexError('Valor da posição no placar é ilegal')
   33 	        if self.taken[posicao - 1]:
   34 	            raise ValueError('Posição ocupada no placar')
-  35-->	        k = 1
+  35-->	      k = 1
   36 	        if posicao in range(1, 7):
   37 	            k = self.conta(posicao, dados) * posicao
   38 	        elif posicao == 7:
