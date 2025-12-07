@@ -20,7 +20,6 @@ os.system("python3 -m pyproteum mutagen --create --all 100 0 placar_session")
 
 # os.system("python3 -m pyproteum exemuta --equiv --x 648 placar_session")
 # os.system("python3 -m pyproteum exemuta --equiv --x 635 placar_session")
-os.system("python3 -m pyproteum exemuta --equiv --x 1208 placar_session")
 os.system("python3 -m pyproteum exemuta --equiv --x 0079 placar_session")
 os.system("python3 -m pyproteum exemuta --equiv --x 0080 placar_session")
 os.system("python3 -m pyproteum exemuta --equiv --x 0159 placar_session")
@@ -51,10 +50,15 @@ os.system("python3 -m pyproteum exemuta --equiv --x 0530 placar_session")
 os.system("python3 -m pyproteum exemuta --equiv --x 0531 placar_session")
 os.system("python3 -m pyproteum exemuta --equiv --x 0532 placar_session")
 
-
-
-
-
+os.system("python3 -m pyproteum exemuta --equiv --x 1208 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1179 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1174 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1164 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1159 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1154 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1149 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1144 placar_session")
+os.system("python3 -m pyproteum exemuta --equiv --x 1139 placar_session")
 
 
 os.system("python3 -m pyproteum exemuta --exec placar_session")

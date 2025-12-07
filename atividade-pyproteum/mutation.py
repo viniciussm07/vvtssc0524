@@ -43,6 +43,15 @@ class TestPlacarMutation(unittest.TestCase):
     def test_quina_falsa_intruso_fim(self):
         self.assertFalse(self.p.checkQuina([2, 2, 2, 2, 1]))
 
+    def test_quina_falsa_intruso_maior_igual_2_e_3(self):
+        self.assertFalse(self.p.checkQuina([5, 5, 5, 4, 4]))
+    
+    def test_quina_falsa_intruso_maior_igual_1_e_2(self):
+        self.assertFalse(self.p.checkQuina([5, 5, 4, 4, 4]))
+    
+    def test_quina_falsa_intruso_maior_igual_0_e_1(self):
+        self.assertFalse(self.p.checkQuina([5, 4, 4, 4, 4]))
+
     def test_posicao_8_sequencia_invalida_retorna_zero(self):
         self.p.add(8, [1, 1, 1, 1, 1])
         self.assertEqual(self.p.placar[7], 0)
