@@ -39,5 +39,4 @@ python3 -m pyproteum mutaview --view --x 1216 placar_session
 executar apenas vivos
 ```
 python3 -m pyproteum exemuta --exec --keep placar_session
-Session:  placar_session
 ```
