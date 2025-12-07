@@ -26,6 +26,11 @@ Lista os mutantes
 python3 -m pyproteum mutaview --list placar_session
 ```
 
+Lista os mutantes vivos (só funciona no linux)
+```python3
+python3 -m pyproteum mutaview --list placar_session | grep 'live'
+```
+
 Executa os casos de teste em cima dos mutantes
 ```
 python3 -m pyproteum exemuta --exec placar_session
