@@ -55,6 +55,18 @@ class TestPlacarMutation(unittest.TestCase):
     def test_posicao_8_sequencia_invalida_retorna_zero(self):
         self.p.add(8, [1, 1, 1, 1, 1])
         self.assertEqual(self.p.placar[7], 0)
+    
+    def test_sequencia_maiorIgual_posicao_3_e_4(self):
+        self.assertFalse(self.p.checkSeqMaior([1, 2, 3, 4, 4]))
+
+    def test_sequencia_maiorIgual_posicao_2_e_3(self):
+        self.assertFalse(self.p.checkSeqMaior([1, 2, 3, 3, 4]))
+
+    def test_sequencia_maiorIgual_posicao_1_e_2(self):
+        self.assertFalse(self.p.checkSeqMaior([1, 2, 2, 3, 4]))
+    
+    def test_sequencia_maiorIgual_posicao_0_e_1(self):
+        self.assertFalse(self.p.checkSeqMaior([2, 2, 3, 4, 5]))
 
     def test_taken_deve_ser_boolean_true(self):
         self.p.add(1, [1, 1, 1, 1, 1])
